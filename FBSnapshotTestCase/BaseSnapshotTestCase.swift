@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class BaseSnapshotTestCase: FBSnapshotTestCase {
+open class BaseSnapshotTestCase: FBSnapshotTestCase {
 	
 	var rootPath: String {
 		guard let root = Bundle(for: Self.self).object(forInfoDictionaryKey: "ROOT") as? String

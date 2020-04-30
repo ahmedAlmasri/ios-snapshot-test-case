@@ -15,7 +15,7 @@ open class BaseSnapshotTestCase: FBSnapshotTestCase {
 			else {
 				fatalError("the `ROOT` key not added to info.plist")
 		}
-		return "\(root)\(Self.self)"
+		return "\(root)/\(Self.self)"
 	}
 	
 	public override func getReferenceImageDirectory(withDefault dir: String?) -> String {
